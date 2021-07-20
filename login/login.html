@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>BrowserOnlyGames - Log In</title>
+  <link rel="stylesheet" href="http://localhost:8000/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav>
+        <div id="logo">BrowserOnlyGames</div>
+        <div class="navbar">
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="http://localhost:8000">Home</a></li>
+                <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">Arcade</label>
+                    <a href="#">Arcade</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="http://localhost:8000/Games/Arcade/HTML5-Asteroids-master/">Asteroids</a></li>
+                        <li><a href="http://localhost:8000/Games/Arcade/Captain-Rogers-master/">Captain Rogers</a></li>
+                        <li><a href="http://localhost:8000/Games/Arcade/custom-tetris-master/index.html">Tetris</a></li>
+                        <li><a href="http://localhost:8000/Games/Arcade/backbone-game-engine-gh-pages/super-mario-bros/index.html">Super Mario Bros</a></li>
+                    </ul> 
+
+                </li>
+              <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">Puzzle</label>
+                    <a href="#">Puzzle</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="http://localhost:8000/Games/Puzzle/Beatrix-master/index.html">Beatrix</a></li>
+                        <li><a href="http://localhost:8000/Games/Puzzle/parity-master/index.html">Parity</a></li>
+                    </ul> 
+
+                </li>
+                <li>
+
+                <!-- First Tier Drop Down -->
+                <label for="drop-2" class="toggle">Tactical</label>
+                <a href="#">Tactical</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul>
+                    <li><a href="http://localhost:8000/Games/Strategy/diablo-js-master/index.html">Diablo -1</a></li>
+                </ul>
+                </li>
+                <li><a href="http://localhost:8000/community/index.html">Community</a></li>
+                <li><a href="http://localhost:8000/login">Login</a></li>
+                <li><a href="http://localhost:8000/signup">Sign Up</a></li>
+            </ul>
+        </nav>
+<!-- partial -->
+<div class="container">
+    <form method="post" action="">
+        <div id="div_login">
+            <h1>Login</h1>
+            <div>
+                <input type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
+            </div>
+            <div>
+                <input type="password" class="textbox" id="txt_uname" name="txt_pwd" placeholder="Password"/>
+            </div>
+            <div>
+                <input type="submit" value="Submit" name="but_submit" id="but_submit" />
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

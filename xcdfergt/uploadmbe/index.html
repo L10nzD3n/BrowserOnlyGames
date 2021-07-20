@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Index</title>
+  <link rel="stylesheet" href="http://localhost:8000/style.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+	<nav>
+        <div id="logo">BrowserOnlyGames</div>
+        <div class="navbar">
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="http://localhost:8000">Home</a></li>
+                <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">Arcade</label>
+                    <a href="#">Arcade</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="http://localhost:8000/Games/Arcade/HTML5-Asteroids-master/">Asteroids</a></li>
+                        <li><a href="http://localhost:8000/Games/Arcade/Captain-Rogers-master/">Captain Rogers</a></li>
+                        <li><a href="http://localhost:8000/Games/Arcade/custom-tetris-master/index.html">Tetris</a></li>
+                        <li><a href="http://localhost:8000/Games/Arcade/backbone-game-engine-gh-pages/super-mario-bros/index.html">Super Mario Bros</a></li>
+                    </ul> 
+
+                </li>
+              <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">Puzzle</label>
+                    <a href="#">Puzzle</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="http://localhost:8000/Games/Puzzle/Beatrix-master/index.html">Beatrix</a></li>
+                        <li><a href="http://localhost:8000/Games/Puzzle/parity-master/index.html">Parity</a></li>
+                    </ul> 
+
+                </li>
+                <li>
+
+                <!-- First Tier Drop Down -->
+                <label for="drop-2" class="toggle">Tactical</label>
+                <a href="#">Tactical</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul>
+                    <li><a href="http://localhost:8000/Games/Strategy/diablo-js-master/index.html">Diablo -1</a></li>
+                </ul>
+                </li>
+                <li><a href="http://localhost:8000/community/index.html">Community</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+<!-- partial:index.partial.html -->
+<div class="frame">
+  <div class="center">
+		<div class="bar"></div>
+		<div class="title">Drop file to upload</div>
+		<div class="dropzone">
+			<div class="content">
+				<img src="https://100dayscss.com/codepen/upload.svg" class="upload">
+				<span class="filename"></span>
+				<input type="file" class="input">
+			</div>
+		</div>
+		<img src="https://100dayscss.com/codepen/syncing.svg" class="syncing">
+		<img src="https://100dayscss.com/codepen/checkmark.svg" class="done">
+		<div class="upload-btn">Upload Game</div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://100dayscss.com/codepen/js/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

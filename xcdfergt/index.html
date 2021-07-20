@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BrowserOnlyGames - Upload Games</title>
+  <link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+<nav>
+        <div id="logo">BrowserOnlyGames</div>
+        <div class="navbar">
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">Arcade</label>
+                    <a href="#">Arcade</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="/Games/Arcade/Emberwind-master">Emberwind</a></li>
+                        <li><a href="/Games/Arcade/Captain-Rogers-master/">Captain Rogers</a></li>
+                        <li><a href="/Games/Arcade/custom-tetris-master/index.html">Tetris</a></li>
+                        <li><a href="/Games/Arcade/backbone-game-engine-gh-pages/super-mario-bros/index.html">Super Mario Bros</a></li>
+                    </ul> 
+
+                </li>
+              <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">Puzzle</label>
+                    <a href="#">Puzzle</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="/Games/Puzzle/Beatrix-master/index.html">Beatrix</a></li>
+                        <li><a href="/Games/Puzzle/parity-master/index.html">Parity</a></li>
+                    </ul> 
+
+                </li>
+                <li>
+
+                <!-- First Tier Drop Down -->
+                <label for="drop-2" class="toggle">Tactical</label>
+                <a href="#">Tactical</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul>
+                    <li><a href="/Games/Strategy/diablo-js-master/index.html">Diablo -1</a></li>
+                </ul>
+                </li>
+                <li><a href="/login">Community</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/signup">Sign Up</a></li>
+            </ul>
+        </nav>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+  Select files to upload:
+  <input type="file" name="fileToUpload" id="fileToUpload">
+  <input type="submit" value="Upload File" name="submit">
+</form>
+
+</body>
+</html>
